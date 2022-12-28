@@ -1,0 +1,205 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+
+@media only screen and (max-width:450px) {
+
+
+
+
+
+/* navigation */
+
+
+.logo a h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.hum {
+    display: inline-block;
+    margin-right: 0rem;
+    position: relative;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+    z-index: 6;
+}
+
+
+input[type="checkbox"]:checked~.hum>label>#cross {
+    display: block;
+    
+    
+}
+
+input[type="checkbox"]:checked~.hum>label>#hum-bar {
+    display: none;
+    
+}
+
+
+
+
+header #navbar {
+    position: fixed;
+    inset: 0% 0% 45% 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translatey(-100%);
+    transition: transform 0.7s ease-in-out;
+    
+    z-index: 12;
+}
+
+header #navbar::before {
+    background-color: rgba(253, 53, 93);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    /* opacity: .299; */
+    /* filter: contrast(1); */
+}
+
+input[type="checkbox"]:checked~#navbar {
+
+       transform: translatey(0%);
+
+   }   
+
+#navbar label {
+    display: inline-block;
+    margin-right: 0rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+    z-index: 10;
+    /* border: 2px solid red; */
+    height: 10%;
+    width: 12%;
+}
+
+#navbar label #cross {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+#navbar ul {
+    display: block;
+    text-align: center;
+}
+
+#navbar ul li {
+    /* display: none; */
+    margin: 1rem;
+}
+
+.contact-banner{
+    min-height: 55vh;
+}
+
+ .contact-details {
+        padding: 1rem;
+      
+    }
+
+
+
+    .main-box {
+  
+        padding: 0.3rem;
+    }
+
+
+    .box{
+        height: 81px;
+       margin: .2rem;
+       max-width: 250px;
+    }
+
+    .text{
+        padding: .5rem;
+        /* height: 80px; */
+        width: 84%;
+    }
+    .icon{
+        font-size: 1.5rem;
+    }
+
+
+    .detail-box {
+    gap: 1rem;
+        flex-direction: column;
+        
+        /* padding-inline: 1.5rem; */
+    }
+
+
+    .child-box {
+        position: relative;
+        /* border: 2px solid black; */
+        width: 100%;
+        height: 220px;
+        
+    
+    }
+
+
+    #input {
+   
+        row-gap: .5rem;
+   
+    
+    }
+
+
+
+    /* footer */
+    #f-box-4 {
+        padding-block: 1rem;
+    }
+    footer  #f-box-4 span{
+        font-size: .8rem;
+      }
+  
+  
+  
+  
+      /* utility classes */
+  
+      .h-primary {
+          font-size: 2rem;
+          font-family: var(--ff);
+      }
+
+      .h-secondry {
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        margin: 1rem;
+        padding-inline: 0rem;
+    }
+  
+      .p-primary {
+          font-size: 1rem;
+      }
+  
+      .a-btn{
+          font-size: .8rem;
+          /* margin-top: .5rem; */
+      }
+
+
+
+
+}

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Home-Page.css">
+    <link rel="stylesheet" href="H-Tablet.css">
+    <link rel="stylesheet" href="H-Phone.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Resturant Website | Home.</title>
+
+</head>
+
+<body>
+
+<!-- header: navigation -->
+
+<header>
+
+    <div class="logo">
+        <a href="#home">
+            <h1>logo.</h1>
+        </a>
+    </div>
+
+    
+    <input type="checkbox" name="chk" id="chk">
+    <div class="hum">
+        <label for="chk">
+            <ion-icon name="menu-outline" class="icon" id="hum-bar"></ion-icon>
+        </label>
+    </div>
+    
+    <nav id="navbar">
+        <label for="chk">
+            <ion-icon name="close-outline" class="icon" id="cross"></ion-icon>
+        </label>
+
+        <ul class="nav-list">
+            <li class="items"><a href="#home">home</a></li>
+            <li class="items"><a href="#about">about</a></li>
+            <li class="items"><a href="#menu">menu</a></li>
+            <li class="items"><a href="#reserve">resevation</a></li>
+            <li class="items"><a href="Contact-Page.html">contact</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+
+
+<!-- home section -->
+
+    <section class="home" id="home">
+      
+        <h1>
+            Food at first sight.
+        </h1>
+        <p class="p-primary text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing.<br>magni earum commodi blanditiis.
+        </p>
+        <a href="Order-Page.html" class="a-btn">order online</a>
+ 
+    </section>
+
+
+
+
+<!-- about section -->
+
+    <section class="about" id="about">
+        <div class="row">
+            <div class="about-t-i" id="abt-text">
+                <h2 class="h-primary">about</h2>
+                <p class="p-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dicta quam suscipit
+                    maiores quas? Quis beatae placeat excepturi quasi officia itaque dolore voluptatum totam dolores
+                    dolorem, asperiores, a modi soluta! Lorem ipsum dolor sit amet,Lorem ipsum dolor, sit amet
+                    consectetur adipisicing elit. Eos a mollitia praesentium quam harum totam aperiam ratione itaque
+                    sapiente, numquam rem eaque quaerat consequatur asperiores ipsa velit minima. Cumque ipsam
+                    laudantium ex alias molestias nobis unde consequuntur quas aliquid ad. </p>
+                <p class="p-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dicta quam suscipit
+                    maiores quas? Quis beatae placeat excepturi. </p>
+            </div>
+            <div class="about-t-i">
+                <img src="about.png" alt="">
+                
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+
+<!-- menu section -->
+
+    <section class="menu" id="menu">
+        <div class="menu-head">
+            <h2 class="h-primary text-center">menu</h2>
+            <p class="p-primary text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            </p>
+        </div>
+        <div class="menu-con">
+            <div class="menu-box">
+                <div class="m-text">
+                    <h3>food 1</h3>
+                </div>
+                <div class="m-img">
+                    <img src="b2.png"
+                        alt="breakfast food">
+                </div>
+            </div>
+            <div class="menu-box">
+                <div class="m-text">
+                    <h3>food 2</h3>
+                </div>
+                <div class="m-img">
+                    <img src="L1.png"
+                        alt="lunch food">
+                </div>
+            </div>
+            <div class="menu-box">
+                <div class="m-text">
+                    <h3>food 3</h3>
+                </div>
+                <div class="m-img">
+                    <img src="dinner.png"
+                        alt="dinner food">
+                </div>
+            </div>
+            <div class="menu-box">
+                <div class="m-text">
+                    <h3>food 4</h3>
+                </div>
+                <div class="m-img">
+                    <img src="dessert.png"
+                        alt="dessert">
+                </div>
+            </div>
+            <div class="menu-box">
+                <div class="m-text">
+                    <h3>food 5</h3>
+                </div>
+                <div class="m-img">
+                    <img src="drink.png"
+                        alt="drinks">
+                </div>
+            </div>
+            <div class="menu-box">
+                <div class="m-text">
+                    <h3>food 6</h3>
+                </div>
+                <div class="m-img">
+                    <img src="tea.png"
+                        alt="tea">
+                </div>
+            </div>
+        </div>
+        <div class="menu-btn text-center">
+            <a href="Order-Page.html" class="a-btn text-center">view more</a>
+        </div>
+    </section>
+
+
+
+
+
+
+<!-- reservation section -->
+
+    <section class="reserve" id="reserve">
+        <div class="res-text">
+            <h2 class="h-primary text-center">reservation</h2>
+        </div>
+
+        <div class="reserve-con">
+            <div class="content" id="date-box">
+                <input type="date" name="date" id="date" placeholder="Date :" min="2022-11-11" max="2022-12-31">
+            </div>
+            <div class="content" id="time-box">
+                <select name="time" id="time">
+                    <option value="">Time</option>
+                    <option value="">12:00 pm</option>
+                    <option value="">01:00 pm</option>
+                    <option value="">02:00 pm</option>
+                    <option value="">03:00 pm</option>
+                    <option value="">04:00 pm</option>
+                    <option value="">05:00 pm</option>
+                    <option value="">06:00 pm</option>
+                    <option value="">07:00 pm</option>
+                    <option value="">08:00 pm</option>
+                    <option value="">09:00 pm</option>
+                    <option value="">10:00 pm</option>
+                    <option value="">11:00 pm</option>
+                    <option value="">12:00 am</option>
+                    <option value="">01:00 am</option>
+                </select>
+            </div>
+            <div class="content" id="person-box">
+                <select name="person" id="person">
+                    <option value="">persons</option>
+                    <option value="">1 person</option>
+                    <option value="">2 person</option>
+                    <option value="">3 person</option>
+                    <option value="">4 person</option>
+                    <option value="">5 person</option>
+                    <option value="">6 person</option>
+                </select>
+            </div>
+            <div class="content">
+                <div id="btn-box">
+                    <button type="submit" onclick="alert('Reservation Successful')">book now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+<!-- contact section -->
+    <section class="contact" id="contact">
+
+        <div class="cntc-con">
+
+            <div class="cntc-box" id="c-box-1">
+                <div id="add-h">
+                    <h3>adreess</h3>
+                </div>
+
+                <div id="add-s">
+                    <span class="p-primary text-center">Marine Lines, Mumbai,</span>
+                    <span class="p-primary text-center">Maharashtra 400021</span>
+                </div>
+            </div>
+
+
+            <div class="cntc-box" id="c-box-2">
+                <h3>opening hours</h3>
+                <span class="p-primary text-center">Mon - Fri: 12am - 1pm <br> Sat - Sun: 12am - 2pm</span>
+            </div>
+
+            <div class="cntc-box" id="c-box-3">
+                <h3>contact us</h3>
+                <span class="p-primary text-center">myfood.com <br> 123 456 6789</span>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+<!-- footer -->
+    <footer>
+        <div class="f-box" id="f-box-4">
+            <span class="p-primary text-center">
+
+                @copyright 2022, Desing By: Shaoib Ansari
+            </span>
+        </div>
+    </footer>
+
+
+
+
+<!-- script -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+</body>
+
+</html>

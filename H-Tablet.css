@@ -1,0 +1,300 @@
+/* responsive at tablet */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+
+@media only screen and (min-width:450px) and (max-width: 800px) {
+
+
+
+
+ /* navigation */
+
+ .logo a h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+
+input[type="checkbox"] {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+
+
+input[type="checkbox"]:checked~#navbar {
+
+    transform: translateX(0%);
+
+}
+
+input[type="checkbox"]:checked~.hum>label>#hum-bar {
+    display: none;
+
+}
+
+.hum {
+    display: inline-block;
+    margin-right: 0rem;
+    position: relative;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+    z-index: 7;
+}
+
+.hum label .icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    width: 100%;
+    height: 100%;
+    color: white;
+    /* color: black; */
+}
+
+
+#navbar {
+    position: fixed;
+    inset: 0 0 0 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.7s ease-in-out;
+    z-index: 12;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 55, 95, 1);
+    z-index: -2;
+    /* opacity: .3; */
+    /* filter: contrast(1); */
+}
+
+#navbar label {
+    display: inline-block;
+    margin-right: 0rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+    z-index: 10;
+    /* border: 2px solid red; */
+    height: 6%;
+    width: 17%;
+}
+
+#navbar label #cross {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+
+#navbar ul {
+    display: block;
+    text-align: center;
+}
+
+#navbar ul li {
+    /* display: none; */
+    margin: 1rem;
+}
+  
+
+    /* home */
+
+    #home h1 {
+        font-size: 3.7rem;
+        margin: 0;
+    }
+
+    #home p {
+        padding-inline: 1rem;
+        margin-inline: 2rem;
+    }
+
+    #home a {
+        font-size: .8rem;
+        margin-top: .5rem;
+    }
+
+
+
+
+    /* about */
+
+    .about {
+        min-height: 80vh;
+        padding: 4rem 1.5rem;
+    }
+
+    .about .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .about .row .about-t-i {
+        justify-items: flex-end;
+        width: 100%;
+        height: 300px;
+    }
+
+    .about .row #abt-text {
+        overflow: scroll;
+        margin-bottom: .7rem;
+    }
+
+    .about-t-i h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-t-i p {
+        padding: .3rem;
+        line-height: 1.2rem;
+        word-wrap: break-word;
+        text-overflow: ellipsis;
+    }
+
+
+
+
+
+    /* menu */
+
+    .menu {
+        padding:4rem  1.5rem;
+    }
+
+    .menu-head {
+        margin-bottom: 1rem;
+    }
+
+    .menu-con {
+        margin-top: 0em;
+    }
+
+    .menu .menu-box {
+        width: 285px;
+        margin: 0.5rem;
+        border: 1rem solid white;
+    }
+
+    .menu .menu-box:nth-child(6),
+    .menu-box:nth-child(5) {
+        display: none;
+    }
+
+    .menu-btn {
+        text-align: center;
+        margin-top: 1rem;
+
+    }
+
+
+
+
+    /* reservation */
+
+    .reserve {
+        padding: 1em;
+    }
+
+    .reserve .reserve-con {
+        max-width: 100%;
+        height: 250px;
+        margin-top: 0rem;
+    }
+
+    .content {
+        width: 190px;
+        height: 20%;
+        margin: 0.5rem;
+        padding: 0.2rem;
+    }
+
+    .reserve .reserve-con .content input {
+        font-size: .9rem;
+        padding: 0.3rem;
+    }
+
+    .reserve .reserve-con .content select {
+        font-size: .9rem;
+        padding: 0.3rem;
+    }
+
+    .reserve .reserve-con .content button {
+        font-size: 1rem;
+        padding: .5rem;
+    }
+
+
+
+
+    /* contact */
+
+
+    .contact .cntc-con {
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 0;
+        padding: 0.5em;
+    }
+
+    .cntc-box h3 {
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .cntc-box span {
+        font-size: 1rem;
+    }
+
+
+
+
+
+    /* utility classes */
+
+
+    section {
+        min-height: 100vh;
+    }
+
+    .h-primary {
+        font-size: 2.5rem;
+        font-family: var(--ff);
+    }
+
+    .p-primary {
+        font-size: 1rem;
+    }
+
+    .a-btn {
+        font-size: .8rem;
+        margin-top: .5rem;
+    }
+
+
+}

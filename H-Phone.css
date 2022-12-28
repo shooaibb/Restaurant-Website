@@ -1,0 +1,307 @@
+
+
+
+/* responsive at phone */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+@media only screen and (max-width:450px) {
+
+
+
+
+
+/* navigation */
+
+
+.logo a h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.hum {
+    display: inline-block;
+    margin-right: 0rem;
+    position: relative;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+    z-index: 6;
+}
+
+
+input[type="checkbox"]:checked~.hum>label>#cross {
+    display: block;
+    
+    
+}
+
+input[type="checkbox"]:checked~.hum>label>#hum-bar {
+    display: none;
+    
+}
+
+
+
+
+header #navbar {
+    position: fixed;
+    inset: 0% 0% 45% 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translatey(-100%);
+    transition: transform 0.7s ease-in-out;
+    
+    z-index: 12;
+}
+
+header #navbar::before {
+    background-color: rgba(253, 53, 93);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    /* opacity: .299; */
+    /* filter: contrast(1); */
+}
+
+input[type="checkbox"]:checked~#navbar {
+
+       transform: translatey(0%);
+
+   }   
+
+#navbar label {
+    display: inline-block;
+    margin-right: 0rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+    z-index: 10;
+    /* border: 2px solid red; */
+    height: 10%;
+    width: 12%;
+}
+
+#navbar label #cross {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+#navbar ul {
+    display: block;
+    text-align: center;
+}
+
+#navbar ul li {
+    /* display: none; */
+    margin: 1rem;
+}
+
+
+
+
+
+
+    /* home */
+
+    #home{
+        padding: 1rem;    
+    }
+
+    #home h1 {
+        font-size: 3rem;
+        margin: 1.7rem;
+    }
+
+    #home p {
+        padding-inline: 0rem;
+        margin-inline: 1rem;
+    }
+
+    #home a {
+        font-size: .8rem;
+        margin-top: .5rem;
+    }
+
+
+
+    /* about */
+
+    .about {
+        padding: 4rem 1rem;
+        min-height: 80vh;
+    }
+
+    .about .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .about .row .about-t-i {
+        justify-items: flex-end;
+        width: 100%;
+        height: 280px;
+    }
+
+    .about .row #abt-text {
+        overflow: scroll;
+        margin-bottom: .7rem;
+    }
+
+    .about-t-i h2 {
+        font-size: 2rem;
+    }
+
+    .about-t-i p {
+        padding: .3rem;
+        line-height: 1.2rem;
+        word-wrap: break-word;
+        text-overflow: ellipsis;
+    }
+
+
+
+
+    /* menu */
+
+    .menu {
+        padding:4rem 1rem;
+    }
+
+    .menu-head {
+        margin-bottom: 0rem;
+    }
+
+    .menu-con {
+        margin-top: 0em;
+    }
+
+    .menu .menu-box {
+        width: 235px;
+        margin: 0.5rem;
+        border: .5rem solid white;
+    }
+
+    .menu .menu-box:nth-child(6),.menu-box:nth-child(5),.menu-box:nth-child(4){
+        display: none;
+    }
+
+    .m-img {
+        width: 100%;
+        height: 140px;        
+    }
+
+    .m-text h3 {
+        padding-block: 0.5em;
+        font-size: 1.3rem;
+    }
+
+    .menu-btn {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+
+
+
+    /* reservation */
+
+    .reserve {
+        min-height:62vh ;
+        padding: 0em;
+    }
+
+    .reserve .reserve-con {
+        max-width: 100%;
+        height: 190px;
+        margin-top: 0rem;
+    }
+
+    .content {
+        width: 185px;
+        height: 20%;
+        margin: 0.5rem;
+        padding: 0.2rem;
+    }
+
+    .reserve .reserve-con .content input {
+        font-size: .9rem;
+        padding: 0.3rem;
+    }
+
+    .reserve .reserve-con .content select {
+        font-size: .9rem;
+        padding: 0.3rem;
+    }
+
+    .reserve .reserve-con .content #btn-box{
+        font-size: 1rem;
+        padding: .5rem;
+    }
+
+
+
+
+    /* contact */
+
+    .contact .cntc-con {
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 0;
+        padding: 0.5em;
+    }
+
+    .cntc-box h3 {
+        font-size: 1.2rem;
+        padding-bottom: 1rem;
+    }
+
+    .cntc-box span {
+        font-size: .7rem;
+    }
+    
+
+    
+    
+    /* footer */
+
+    footer  #f-box-4 span{
+      font-size: .8rem;
+    }
+
+
+
+
+
+    /* utility classes */
+
+    .h-primary {
+        font-size: 2rem;
+        font-family: var(--ff);
+    }
+
+    .p-primary {
+        font-size: 1rem;
+    }
+
+    .a-btn{
+        font-size: .8rem;
+        margin-top: .5rem;
+    }
+
+}
